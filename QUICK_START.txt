@@ -1,0 +1,68 @@
+============================================================
+QUICK START GUIDE - FOR YOUR CURRENT ERROR
+============================================================
+
+YOUR ERROR:
+-----------
+You're trying to run: python 01_load_and_profile.ipynb
+This DOESN'T WORK because .ipynb files are Jupyter notebooks, 
+not Python scripts!
+
+SOLUTION 1 - Use Python Scripts (EASIEST):
+-------------------------------------------
+1. Delete ALL .ipynb files in your folder
+
+2. Copy the Python .py files I'm providing
+
+3. Run IN THIS ORDER:
+   python 00_generate_sample_data.py   # Creates fake data
+   python 01_load_and_profile.py        # Loads and profiles
+   python 02_cleaning_pipeline.py       # Cleans data
+   python 03_transformation.py          # Transforms data
+   python 04_integration.py             # Integrates data
+   python 05_reduction.py               # Reduces features
+   python 06_feature_engineering.py     # Engineers features
+
+SOLUTION 2 - Use Jupyter Notebook:
+-----------------------------------
+1. Open PowerShell/Terminal
+
+2. Type: jupyter notebook
+
+3. Your browser will open automatically
+
+4. Click on the .ipynb file you want to run
+
+5. Click "Run" or press Shift+Enter on each cell
+
+============================================================
+WHAT TO DO RIGHT NOW:
+============================================================
+
+STEP 1: Install requirements
+-----------------------------
+pip install -r requirements.txt
+
+STEP 2: Generate sample data
+-----------------------------
+python 00_generate_sample_data.py
+
+This will create:
+- raw_data/Huye_students.csv
+- raw_data/Huye_courses.csv
+- raw_data/Huye_assessments.csv
+- (same for Kigali and Musanze)
+
+STEP 3: Run Phase 1
+--------------------
+python 01_load_and_profile.py
+
+This will create outputs in the /outputs/ folder
+
+STEP 4: Continue with remaining phases
+---------------------------------------
+python 02_cleaning_pipeline.py
+python 03_transformation.py
+... and so on
+
+============================================================
